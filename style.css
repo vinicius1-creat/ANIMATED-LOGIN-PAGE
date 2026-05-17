@@ -81,3 +81,24 @@ input {
     background: 8px;
     outline: none;
 }
+
+.form-box button{
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 22px;
+    background: #14b8a6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.register{
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.overlay{
+    position: absolute;
+}
