@@ -87,7 +87,7 @@ input {
     padding: 12px;
     border: none;
     border-radius: 22px;
-    background: #14b8a6;
+    background: #5a48e0;
     color: #fff;
     cursor: pointer;
 }
@@ -101,4 +101,75 @@ input {
 
 .overlay{
     position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg,#3141ab,#6f78ad);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    transition: .6s ease;
+    z-index: 3;
+}
+
+.overlay button{
+    margin-top: 20px;
+    padding: 12px 35px;
+    border-radius: 22px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container.active .login{
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container.active .register{
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+@media (max-width:768px) {
+    .container{
+        height: auto;
+    }
+
+    .form-box{
+        position: relative;
+        width: 100%;
+        height: auto;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .register{
+        display: none;
+    }
+
+    .container.active .register{
+        display: flex;
+    }
+
+    .container.activer .login{
+        display: none;
+    }
+
+    .overlay{
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0;
+        transform: none;
+        border-radius: 0 0 22px 22px;
+
+    }
 }
