@@ -152,7 +152,7 @@ input {
         height: auto;
         transform: none;
         opacity: 1;
-        pointer-events: auto;
+        pointer-events: none;
     }
 
     .register{
@@ -163,7 +163,7 @@ input {
         display: flex;
     }
 
-    .container.activer .login{
+    .container.active .login{
         display: none;
     }
 
