@@ -14,7 +14,7 @@ body{
     padding: 20px;
 }
 
-.conteiner{
+.container{
     position: relative;
     width: 760px;
     max-width: 100%;
@@ -99,6 +99,8 @@ input {
 }
 
 
+
+
 .overlay{
     position: absolute;
     left: 50%;
@@ -138,8 +140,9 @@ input {
 .container.active .register{
     transform: translateX(100%);
     opacity: 1;
-    pointer-events: none;
+    pointer-events: auto;
 }
+
 
 @media (max-width:768px) {
     .container{
